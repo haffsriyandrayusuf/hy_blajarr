@@ -70,3 +70,132 @@ List<Map<String, dynamic>> listTeacher = [
     "jobPosition": "UX Designer",
   },
 ];
+
+List<String> listTabs = ["Lessons", "About", "Discussions", "Reviews"];
+
+List<Map<String, dynamic>> listSection = [
+  {
+    "sectionID": 1,
+    "sectionTitle": "Warming Up 1",
+    "sectionLesson": [
+      {
+        "itemID": 1,
+        "itemLesson": "Installation Tools  1",
+        "status": "done",
+      },
+      {
+        "itemID": 2,
+        "itemLesson": "Introduction 1",
+        "status": "done",
+      },
+      {
+        "itemID": 3,
+        "itemLesson": "Download Assets 1",
+        "status": "done",
+      },
+      {
+        "itemID": 4,
+        "itemLesson": "Install Plugins 1",
+        "status": "pending",
+      },
+      {
+        "itemID": 5,
+        "itemLesson": "Summary 1",
+        "status": "pending",
+      },
+    ]
+  },
+  {
+    "sectionID": 2,
+    "sectionTitle": "Warming Up 2",
+    "sectionLesson": [
+      {
+        "itemID": 1,
+        "itemLesson": "Installation Tools 2",
+        "status": "done",
+      },
+      {
+        "itemID": 2,
+        "itemLesson": "Introduction 2",
+        "status": "done",
+      },
+      {
+        "itemID": 3,
+        "itemLesson": "Download Assets 2",
+        "status": "done",
+      },
+      {
+        "itemID": 4,
+        "itemLesson": "Install Plugins 2",
+        "status": "pending",
+      },
+      {
+        "itemID": 5,
+        "itemLesson": "Summary 2",
+        "status": "pending",
+      },
+    ]
+  },
+  {
+    "sectionID": 3,
+    "sectionTitle": "Warming Up 3",
+    "sectionLesson": [
+      {
+        "itemID": 1,
+        "itemLesson": "Installation Tools 3",
+        "status": "done",
+      },
+      {
+        "itemID": 2,
+        "itemLesson": "Introduction 3",
+        "status": "done",
+      },
+      {
+        "itemID": 3,
+        "itemLesson": "Download Assets 3",
+        "status": "done",
+      },
+      {
+        "itemID": 4,
+        "itemLesson": "Install Plugins 3",
+        "status": "pending",
+      },
+      {
+        "itemID": 5,
+        "itemLesson": "Summary 3",
+        "status": "pending",
+      },
+    ]
+  },
+  {
+    "sectionID": 4,
+    "sectionTitle": "Warming Up 4",
+    "sectionLesson": [
+      {
+        "itemID": 1,
+        "itemLesson": "Installation Tools 4",
+        "status": "done",
+      },
+      {
+        "itemID": 2,
+        "itemLesson": "Introduction 4",
+        "status": "done",
+      },
+      {
+        "itemID": 3,
+        "itemLesson": "Download Assets 4",
+        "status": "done",
+      },
+      {
+        "itemID": 4,
+        "itemLesson": "Install Plugins 4",
+        "status": "pending",
+      },
+      {
+        "itemID": 5,
+        "itemLesson": "Summary 4",
+        "status": "pending",
+      },
+    ]
+  },
+];

@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Blajarr',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        dividerColor: Colors.transparent,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),

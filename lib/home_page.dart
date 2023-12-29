@@ -480,54 +480,48 @@ class _HomePageState extends State<HomePage> {
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Theme(
-              data: ThemeData(
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
+            child: BottomNavigationBar(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: primaryTextColor,
+              selectedLabelStyle: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w700,
               ),
-              child: BottomNavigationBar(
-                backgroundColor: Colors.transparent,
-                elevation: 0,
-                type: BottomNavigationBarType.fixed,
-                selectedItemColor: primaryTextColor,
-                selectedLabelStyle: const TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
+              unselectedItemColor: secondaryTextColor,
+              currentIndex: _selectedNav,
+              onTap: (index) {
+                setState(() {
+                  _selectedNav = index;
+                });
+              },
+              items: const [
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.layers_rounded,
+                  ),
+                  label: 'Progress',
                 ),
-                unselectedItemColor: secondaryTextColor,
-                currentIndex: _selectedNav,
-                onTap: (index) {
-                  setState(() {
-                    _selectedNav = index;
-                  });
-                },
-                items: const [
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.layers_rounded,
-                    ),
-                    label: 'Progress',
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.insert_chart_rounded,
                   ),
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.insert_chart_rounded,
-                    ),
-                    label: 'Library',
+                  label: 'Library',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.chat,
                   ),
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.chat,
-                    ),
-                    label: 'Groups',
+                  label: 'Groups',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.settings,
                   ),
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.settings,
-                    ),
-                    label: 'Settings',
-                  ),
-                ],
-              ),
+                  label: 'Settings',
+                ),
+              ],
             ),
           ),
         ),
